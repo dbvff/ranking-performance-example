@@ -21,6 +21,8 @@ python cc-transform.py
 
 # compute z-scores, correlations, ranking points
 python ranking-example.py
+python ranking-example2.py
+python ranking-example3.py
 ```
 
 
