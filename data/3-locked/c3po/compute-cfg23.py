@@ -22,12 +22,12 @@ for FILENAME in ("cfg-23_M.csv", "cfg-23_F.csv"):
     tmp = df[cols2].dropna()
     df["sna2"] = small_number_adjustment(len(tmp.index))
     df["cs2"], _ = compscore(tmp.values)
-    df["rp2"] = 50.0 * (df["sna2"] * tmp.mean(axis=1) + df["cs2"]) 
+    df["rp2"] = 25.0 * (df["sna2"] * tmp.mean(axis=1) + df["cs2"]) 
 
     tmp = df[cols3].dropna()
     df["sna3"] = small_number_adjustment(len(tmp.index))
     df["cs3"], _ = compscore(tmp.values)
-    df["rp3"] = 50.0 * (df["sna3"] * tmp.mean(axis=1) + df["cs3"]) 
+    df["rp3"] = 25.0 * (df["sna3"] * tmp.mean(axis=1) + df["cs3"]) 
 
     df["rp"] = df[["rp1", "rp2", "rp3"]].fillna(0.0).sum(axis=1)
 

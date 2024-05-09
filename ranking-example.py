@@ -36,8 +36,10 @@ competition_files = [
     (75, 'c3po', 'cf-semi-south-am-23_F.csv'),
     (75, 'c3po', 'cf-semi-south-am-23_M.csv'),
 
-    # CFG, is precomputed due to Cuts
-    ('locked', 'c3po', 'cfg-23_M.csv'),  # The field "ranking_points" is precomputed!
+    # CFG, is precomputed due to Cut
+    # - The field "ranking_points" is precomputed!
+    # - the competition weights are D=100+25+25 
+    ('locked', 'c3po', 'cfg-23_M.csv'),  
     ('locked', 'c3po', 'cfg-23_F.csv'),
 ]
 
